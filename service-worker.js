@@ -1,3 +1,5 @@
+/* eslint-disable no-restricted-globals */
+
 const CACHE_NAME = 'dukki-go-v1';
 const urlsToCache = [
   '/',
