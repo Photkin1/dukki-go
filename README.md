@@ -1,46 +1,56 @@
-# Getting Started with Create React App
+# Дубки Go 🌳
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Веб-приложение, которое строит самый быстрый маршрут от общежития НИУ ВШЭ «Дубки» (Одинцово) до корпусов университета с учётом **реального расписания** транспорта на нужный день и время.
 
-## Available Scripts
+**Демо:** https://photkin1.github.io/dukki-go/
 
-In the project directory, you can run:
+Курсовой проект, 1 курс.
 
-### `npm start`
+## Что умеет
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- **Маршрут до универа.** Выбираешь откуда и куда (общежитие, корпус, остановка, метро, станция МЦД), время отправления — «сейчас» или любой день недели и время. Приложение показывает пересадки, ожидание на каждой остановке и время прибытия.
+- **Ближайшие рейсы.** Список ближайших отправлений между выбранными остановками.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Алгоритм
 
-### `npm test`
+В основе — **алгоритм Дейкстры с весами рёбер, зависящими от времени** (time-dependent Dijkstra). Обычный Дейкстра считает, что проезд по ребру всегда стоит одинаково. Для общественного транспорта это не так: время в пути зависит от того, когда ты пришёл на остановку.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Поэтому вес ребра считается в момент, когда алгоритм до него дошёл:
 
-### `npm run build`
+**вес = ожидание ближайшего рейса + время в пути**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Модификации относительно классического алгоритма:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Три типа рёбер.** Пешком — фиксированное время. Автобус и МЦД — по точному расписанию отправлений. Метро — по интервалу движения с учётом ночного перерыва и времени первого поезда (отдельно для чётных и нечётных дней).
+- **Расписание зависит от дня.** Будни, выходные и праздничные дни (календарь праздников на 2026–2028 годы) имеют разные расписания.
+- **Переход через полночь.** Если сегодня рейсов уже нет, ищется первый рейс следующего дня.
+- **Без лишнего ожидания в метро.** Если следующий перегон — та же ветка метро, ожидание поезда не добавляется: пассажир не выходит из вагона.
+- **Восстановление маршрута** с временем отправления, ожиданием и прибытием на каждом отрезке.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Данные
 
-### `npm run eject`
+Граф собран вручную в `src/graph_merged.json`: 26 вершин (общежития, корпуса ВШЭ, остановки, станции метро и МЦД) и 62 ребра — пешие переходы, автобусы, метро и МЦД.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Стек
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+TypeScript, React (Create React App), GitHub Pages.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Структура
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+| Файл | Что внутри |
+| --- | --- |
+| `src/Graph.ts` | Граф и поиск кратчайшего пути |
+| `src/Edge.ts` | Статические (пешком) и динамические (по расписанию) рёбра |
+| `src/Schedule.ts` | Расписание автобусов и МЦД, модель интервалов метро |
+| `src/Moment.ts` | Работа со временем: день недели, праздники, минуты суток |
+| `src/Vertex.ts` | Вершины графа |
+| `src/App.tsx` | Интерфейс |
 
-## Learn More
+## Запуск
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+npm install
+npm start
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Приложение откроется на http://localhost:3000.
