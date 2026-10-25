@@ -234,24 +234,23 @@ function App() {
             const isMetro = er.edge.transportType?.toString().startsWith("metro_");
             
             if (isMetro) {
+                const target = graph.getVertex(er.edge.toId);
                 if (!currentGroup) {
-                    // Начинаем новую группу метро
-                    const fromStation = graph.getVertex(er.edge.fromId)?.name || "";
-                    const toStation = graph.getVertex(er.edge.toId)?.name || "";
+                    // Начинаем новую группу метро: вход на платформе, ожидание поезда
                     currentGroup = {
                         type: "metro",
                         transportName: er.edge.transportName,
-                        fromStation: fromStation,
-                        stations: [toStation],
+                        stations: [],
                         waitMinutes: er.waitMinutes,
                         departureTime: er.departureTime,
                         totalTravelMinutes: er.travelMinutes,
                         arrivalTime: er.arrivalTime
                     };
                 } else {
-                    // Продолжаем группу — добавляем только конечную станцию
-                    const toStation = graph.getVertex(er.edge.toId)?.name || "";
-                    currentGroup.stations.push(toStation);
+                    // Перегон «поезд → поезд» добавляет станцию, выход на платформу — нет
+                    if (target?.type === "metro_train") {
+                        currentGroup.stations.push(target.name);
+                    }
                     currentGroup.totalTravelMinutes += er.travelMinutes;
                     currentGroup.arrivalTime = er.arrivalTime;
                 }

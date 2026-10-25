@@ -23,8 +23,8 @@ export interface PathResult {
 export class Graph {
     private vertices: Map<string, Vertex> = new Map();
 
-    constructor() {
-        for (const vertexData of graphData.vertices) {
+    constructor(data: { vertices: any[] } = graphData) {
+        for (const vertexData of data.vertices) {
             const vertex = Vertex.fromJSON(vertexData);
             this.vertices.set(vertex.id, vertex);
         }
@@ -89,38 +89,22 @@ export class Graph {
             const currentState = state.get(currentId)!;
             const currentVertex = this.vertices.get(currentId)!;
             
+            // Вес ребра зависит только от времени прибытия в вершину.
+            // Ожидание метро стоит на ребре «платформа → поезд», а перегоны
+            // идут между вершинами «в поезде», поэтому предыдущее ребро не важно.
             for (const edge of currentVertex.getEdges()) {
-                const currType = edge.transportType || "";
-                const isMetro = currType.startsWith("metro_");
-                
-                const prevEdge = currentState.prevEdge;
-                const prevType = prevEdge?.transportType || "";
-                
-                // Достаточно просто сравнить типы
-                const isSameMetro = prevType === currType && isMetro;
-                
-                let weight: number;
+                const weight = edge.getWeight(currentState.arrivalTime!);
+                if (weight === Infinity) continue;
+
                 let waitMinutes: number;
                 let travelMinutes: number;
-                
-                if (isSameMetro) {
-                    // Продолжение метро — без ожидания
-                    const tripInfo = edge.getTripInfo!(currentState.arrivalTime!);
-                    waitMinutes = 0;
+                const tripInfo = edge.getTripInfo?.(currentState.arrivalTime!);
+                if (tripInfo) {
+                    waitMinutes = tripInfo.wait;
                     travelMinutes = tripInfo.travel;
-                    weight = travelMinutes;
                 } else {
-                    weight = edge.getWeight(currentState.arrivalTime!);
-                    if (weight === Infinity) continue;
-                    
-                    const tripInfo = edge.getTripInfo?.(currentState.arrivalTime!);
-                    if (tripInfo) {
-                        waitMinutes = tripInfo.wait;
-                        travelMinutes = tripInfo.travel;
-                    } else {
-                        waitMinutes = 0;
-                        travelMinutes = weight;
-                    }
+                    waitMinutes = 0;
+                    travelMinutes = weight;
                 }
                 
                 const newTotal = currentState.totalMinutes + weight;
