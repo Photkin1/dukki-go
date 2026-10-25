@@ -7,24 +7,24 @@
       "edges": [
         {
           "type": "dynamic",
-          "toId": "smol_mt3",
+          "toId": "arb_mt3_train_out",
           "transportType": "metro_3",
           "transportName": "Метро (синяя ветка)",
           "schedule": {
             "wait": 4,
-            "travel": 3,
+            "travel": 0,
             "firstTrainEven": "05:47",
             "firstTrainOdd": "05:47"
           }
         },
         {
           "type": "dynamic",
-          "toId": "pl_rev_mt3",
+          "toId": "arb_mt3_train_center",
           "transportType": "metro_3",
           "transportName": "Метро (синяя ветка)",
           "schedule": {
             "wait": 4,
-            "travel": 2,
+            "travel": 0,
             "firstTrainEven": "05:44",
             "firstTrainOdd": "05:44"
           }
@@ -1514,24 +1514,24 @@
       "edges": [
         {
           "type": "dynamic",
-          "toId": "park_pob_mt3",
+          "toId": "kiev_mt3_train_out",
           "transportType": "metro_3",
           "transportName": "Метро (синяя ветка)",
           "schedule": {
             "wait": 4,
-            "travel": 4,
+            "travel": 0,
             "firstTrainEven": "05:42",
             "firstTrainOdd": "05:42"
           }
         },
         {
           "type": "dynamic",
-          "toId": "smol_mt3",
+          "toId": "kiev_mt3_train_center",
           "transportType": "metro_3",
           "transportName": "Метро (синяя ветка)",
           "schedule": {
             "wait": 4,
-            "travel": 2,
+            "travel": 0,
             "firstTrainEven": "05:42",
             "firstTrainOdd": "05:40"
           }
@@ -1552,24 +1552,24 @@
         },
         {
           "type": "dynamic",
-          "toId": "molod_mt3",
+          "toId": "krul_mt3_train_center",
           "transportType": "metro_3",
           "transportName": "Метро (синяя ветка)",
           "schedule": {
             "wait": 4,
-            "travel": 3,
+            "travel": 0,
             "firstTrainEven": "05:50",
             "firstTrainOdd": "05:57"
           }
         },
         {
           "type": "dynamic",
-          "toId": "strog_mt3",
+          "toId": "krul_mt3_train_out",
           "transportType": "metro_3",
           "transportName": "Метро (синяя ветка)",
           "schedule": {
             "wait": 4,
-            "travel": 9,
+            "travel": 0,
             "firstTrainEven": "05:45",
             "firstTrainOdd": "05:42"
           }
@@ -2117,24 +2117,24 @@
       "edges": [
         {
           "type": "dynamic",
-          "toId": "slav_mt3",
+          "toId": "kun_mt3_train_center",
           "transportType": "metro_3",
           "transportName": "Метро (синяя ветка)",
           "schedule": {
             "wait": 4,
-            "travel": 2,
+            "travel": 0,
             "firstTrainEven": "05:43",
             "firstTrainOdd": "05:43"
           }
         },
         {
           "type": "dynamic",
-          "toId": "molod_mt3",
+          "toId": "kun_mt3_train_out",
           "transportType": "metro_3",
           "transportName": "Метро (синяя ветка)",
           "schedule": {
             "wait": 4,
-            "travel": 3,
+            "travel": 0,
             "firstTrainEven": "05:54",
             "firstTrainOdd": "05:51"
           }
@@ -2148,12 +2148,12 @@
       "edges": [
         {
           "type": "dynamic",
-          "toId": "pl_rev_mt3",
+          "toId": "kursk_mt3_train_out",
           "transportType": "metro_3",
           "transportName": "Метро (синяя ветка)",
           "schedule": {
             "wait": 4,
-            "travel": 3,
+            "travel": 0,
             "firstTrainEven": "05:42",
             "firstTrainOdd": "05:42"
           }
@@ -2209,24 +2209,24 @@
         },
         {
           "type": "dynamic",
-          "toId": "kun_mt3",
+          "toId": "molod_mt3_train_center",
           "transportType": "metro_3",
           "transportName": "Метро (синяя ветка)",
           "schedule": {
             "wait": 4,
-            "travel": 3,
+            "travel": 0,
             "firstTrainEven": "05:46",
             "firstTrainOdd": "05:40"
           }
         },
         {
           "type": "dynamic",
-          "toId": "krul_mt3",
+          "toId": "molod_mt3_train_out",
           "transportType": "metro_3",
           "transportName": "Метро (синяя ветка)",
           "schedule": {
             "wait": 4,
-            "travel": 3,
+            "travel": 0,
             "firstTrainEven": "05:42",
             "firstTrainOdd": "05:54"
           }
@@ -4477,24 +4477,24 @@
       "edges": [
         {
           "type": "dynamic",
-          "toId": "slav_mt3",
+          "toId": "park_pob_mt3_train_out",
           "transportType": "metro_3",
           "transportName": "Метро (синяя ветка)",
           "schedule": {
             "wait": 4,
-            "travel": 4,
+            "travel": 0,
             "firstTrainEven": "05:46",
             "firstTrainOdd": "05:44"
           }
         },
         {
           "type": "dynamic",
-          "toId": "kiev_mt3",
+          "toId": "park_pob_mt3_train_center",
           "transportType": "metro_3",
           "transportName": "Метро (синяя ветка)",
           "schedule": {
             "wait": 4,
-            "travel": 4,
+            "travel": 0,
             "firstTrainEven": "05:50",
             "firstTrainOdd": "05:50"
           }
@@ -4508,24 +4508,24 @@
       "edges": [
         {
           "type": "dynamic",
-          "toId": "arb_mt3",
+          "toId": "pl_rev_mt3_train_out",
           "transportType": "metro_3",
           "transportName": "Метро (синяя ветка)",
           "schedule": {
             "wait": 4,
-            "travel": 2,
+            "travel": 0,
             "firstTrainEven": "05:45",
             "firstTrainOdd": "05:45"
           }
         },
         {
           "type": "dynamic",
-          "toId": "kursk_mt3",
+          "toId": "pl_rev_mt3_train_center",
           "transportType": "metro_3",
           "transportName": "Метро (синяя ветка)",
           "schedule": {
             "wait": 4,
-            "travel": 3,
+            "travel": 0,
             "firstTrainEven": "05:47",
             "firstTrainOdd": "05:46"
           }
@@ -4567,24 +4567,24 @@
         },
         {
           "type": "dynamic",
-          "toId": "kun_mt3",
+          "toId": "slav_mt3_train_out",
           "transportType": "metro_3",
           "transportName": "Метро (синяя ветка)",
           "schedule": {
             "wait": 4,
-            "travel": 2,
+            "travel": 0,
             "firstTrainEven": "05:51",
             "firstTrainOdd": "05:48"
           }
         },
         {
           "type": "dynamic",
-          "toId": "park_pob_mt3",
+          "toId": "slav_mt3_train_center",
           "transportType": "metro_3",
           "transportName": "Метро (синяя ветка)",
           "schedule": {
             "wait": 4,
-            "travel": 4,
+            "travel": 0,
             "firstTrainEven": "05:46",
             "firstTrainOdd": "05:46"
           }
@@ -5995,24 +5995,24 @@
       "edges": [
         {
           "type": "dynamic",
-          "toId": "kiev_mt3",
+          "toId": "smol_mt3_train_out",
           "transportType": "metro_3",
           "transportName": "Метро (синяя ветка)",
           "schedule": {
             "wait": 4,
-            "travel": 2,
+            "travel": 0,
             "firstTrainEven": "05:47",
             "firstTrainOdd": "05:43"
           }
         },
         {
           "type": "dynamic",
-          "toId": "arb_mt3",
+          "toId": "smol_mt3_train_center",
           "transportType": "metro_3",
           "transportName": "Метро (синяя ветка)",
           "schedule": {
             "wait": 4,
-            "travel": 3,
+            "travel": 0,
             "firstTrainEven": "05:48",
             "firstTrainOdd": "05:46"
           }
@@ -6026,12 +6026,12 @@
       "edges": [
         {
           "type": "dynamic",
-          "toId": "krul_mt3",
+          "toId": "strog_mt3_train_center",
           "transportType": "metro_3",
           "transportName": "Метро (синяя ветка)",
           "schedule": {
             "wait": 4,
-            "travel": 9,
+            "travel": 0,
             "firstTrainEven": "05:49",
             "firstTrainOdd": "05:49"
           }
@@ -6056,6 +6056,454 @@
           "transportType": "walk",
           "transportName": "пешком",
           "travelMinutes": 16
+        }
+      ]
+    },
+    {
+      "id": "arb_mt3_train_center",
+      "name": "Метро Арбатская",
+      "type": "metro_train",
+      "edges": [
+        {
+          "type": "static",
+          "toId": "pl_rev_mt3_train_center",
+          "transportType": "metro_3",
+          "transportName": "Метро (синяя ветка)",
+          "travelMinutes": 2
+        },
+        {
+          "type": "static",
+          "toId": "arb_mt3",
+          "transportType": "metro_3",
+          "transportName": "Метро (синяя ветка)",
+          "travelMinutes": 0
+        }
+      ]
+    },
+    {
+      "id": "arb_mt3_train_out",
+      "name": "Метро Арбатская",
+      "type": "metro_train",
+      "edges": [
+        {
+          "type": "static",
+          "toId": "smol_mt3_train_out",
+          "transportType": "metro_3",
+          "transportName": "Метро (синяя ветка)",
+          "travelMinutes": 3
+        },
+        {
+          "type": "static",
+          "toId": "arb_mt3",
+          "transportType": "metro_3",
+          "transportName": "Метро (синяя ветка)",
+          "travelMinutes": 0
+        }
+      ]
+    },
+    {
+      "id": "kiev_mt3_train_center",
+      "name": "Метро Киевская",
+      "type": "metro_train",
+      "edges": [
+        {
+          "type": "static",
+          "toId": "smol_mt3_train_center",
+          "transportType": "metro_3",
+          "transportName": "Метро (синяя ветка)",
+          "travelMinutes": 2
+        },
+        {
+          "type": "static",
+          "toId": "kiev_mt3",
+          "transportType": "metro_3",
+          "transportName": "Метро (синяя ветка)",
+          "travelMinutes": 0
+        }
+      ]
+    },
+    {
+      "id": "kiev_mt3_train_out",
+      "name": "Метро Киевская",
+      "type": "metro_train",
+      "edges": [
+        {
+          "type": "static",
+          "toId": "park_pob_mt3_train_out",
+          "transportType": "metro_3",
+          "transportName": "Метро (синяя ветка)",
+          "travelMinutes": 4
+        },
+        {
+          "type": "static",
+          "toId": "kiev_mt3",
+          "transportType": "metro_3",
+          "transportName": "Метро (синяя ветка)",
+          "travelMinutes": 0
+        }
+      ]
+    },
+    {
+      "id": "krul_mt3_train_center",
+      "name": "Метро Крылатское",
+      "type": "metro_train",
+      "edges": [
+        {
+          "type": "static",
+          "toId": "molod_mt3_train_center",
+          "transportType": "metro_3",
+          "transportName": "Метро (синяя ветка)",
+          "travelMinutes": 3
+        },
+        {
+          "type": "static",
+          "toId": "krul_mt3",
+          "transportType": "metro_3",
+          "transportName": "Метро (синяя ветка)",
+          "travelMinutes": 0
+        }
+      ]
+    },
+    {
+      "id": "krul_mt3_train_out",
+      "name": "Метро Крылатское",
+      "type": "metro_train",
+      "edges": [
+        {
+          "type": "static",
+          "toId": "strog_mt3_train_out",
+          "transportType": "metro_3",
+          "transportName": "Метро (синяя ветка)",
+          "travelMinutes": 9
+        },
+        {
+          "type": "static",
+          "toId": "krul_mt3",
+          "transportType": "metro_3",
+          "transportName": "Метро (синяя ветка)",
+          "travelMinutes": 0
+        }
+      ]
+    },
+    {
+      "id": "kun_mt3_train_center",
+      "name": "Метро Кунцевская",
+      "type": "metro_train",
+      "edges": [
+        {
+          "type": "static",
+          "toId": "slav_mt3_train_center",
+          "transportType": "metro_3",
+          "transportName": "Метро (синяя ветка)",
+          "travelMinutes": 2
+        },
+        {
+          "type": "static",
+          "toId": "kun_mt3",
+          "transportType": "metro_3",
+          "transportName": "Метро (синяя ветка)",
+          "travelMinutes": 0
+        }
+      ]
+    },
+    {
+      "id": "kun_mt3_train_out",
+      "name": "Метро Кунцевская",
+      "type": "metro_train",
+      "edges": [
+        {
+          "type": "static",
+          "toId": "molod_mt3_train_out",
+          "transportType": "metro_3",
+          "transportName": "Метро (синяя ветка)",
+          "travelMinutes": 3
+        },
+        {
+          "type": "static",
+          "toId": "kun_mt3",
+          "transportType": "metro_3",
+          "transportName": "Метро (синяя ветка)",
+          "travelMinutes": 0
+        }
+      ]
+    },
+    {
+      "id": "kursk_mt3_train_center",
+      "name": "Метро Курская",
+      "type": "metro_train",
+      "edges": [
+        {
+          "type": "static",
+          "toId": "kursk_mt3",
+          "transportType": "metro_3",
+          "transportName": "Метро (синяя ветка)",
+          "travelMinutes": 0
+        }
+      ]
+    },
+    {
+      "id": "kursk_mt3_train_out",
+      "name": "Метро Курская",
+      "type": "metro_train",
+      "edges": [
+        {
+          "type": "static",
+          "toId": "pl_rev_mt3_train_out",
+          "transportType": "metro_3",
+          "transportName": "Метро (синяя ветка)",
+          "travelMinutes": 3
+        },
+        {
+          "type": "static",
+          "toId": "kursk_mt3",
+          "transportType": "metro_3",
+          "transportName": "Метро (синяя ветка)",
+          "travelMinutes": 0
+        }
+      ]
+    },
+    {
+      "id": "molod_mt3_train_center",
+      "name": "Метро Молодёжная",
+      "type": "metro_train",
+      "edges": [
+        {
+          "type": "static",
+          "toId": "kun_mt3_train_center",
+          "transportType": "metro_3",
+          "transportName": "Метро (синяя ветка)",
+          "travelMinutes": 3
+        },
+        {
+          "type": "static",
+          "toId": "molod_mt3",
+          "transportType": "metro_3",
+          "transportName": "Метро (синяя ветка)",
+          "travelMinutes": 0
+        }
+      ]
+    },
+    {
+      "id": "molod_mt3_train_out",
+      "name": "Метро Молодёжная",
+      "type": "metro_train",
+      "edges": [
+        {
+          "type": "static",
+          "toId": "krul_mt3_train_out",
+          "transportType": "metro_3",
+          "transportName": "Метро (синяя ветка)",
+          "travelMinutes": 3
+        },
+        {
+          "type": "static",
+          "toId": "molod_mt3",
+          "transportType": "metro_3",
+          "transportName": "Метро (синяя ветка)",
+          "travelMinutes": 0
+        }
+      ]
+    },
+    {
+      "id": "park_pob_mt3_train_center",
+      "name": "Метро Парк Победы",
+      "type": "metro_train",
+      "edges": [
+        {
+          "type": "static",
+          "toId": "kiev_mt3_train_center",
+          "transportType": "metro_3",
+          "transportName": "Метро (синяя ветка)",
+          "travelMinutes": 4
+        },
+        {
+          "type": "static",
+          "toId": "park_pob_mt3",
+          "transportType": "metro_3",
+          "transportName": "Метро (синяя ветка)",
+          "travelMinutes": 0
+        }
+      ]
+    },
+    {
+      "id": "park_pob_mt3_train_out",
+      "name": "Метро Парк Победы",
+      "type": "metro_train",
+      "edges": [
+        {
+          "type": "static",
+          "toId": "slav_mt3_train_out",
+          "transportType": "metro_3",
+          "transportName": "Метро (синяя ветка)",
+          "travelMinutes": 4
+        },
+        {
+          "type": "static",
+          "toId": "park_pob_mt3",
+          "transportType": "metro_3",
+          "transportName": "Метро (синяя ветка)",
+          "travelMinutes": 0
+        }
+      ]
+    },
+    {
+      "id": "pl_rev_mt3_train_center",
+      "name": "Метро Площадь Революции",
+      "type": "metro_train",
+      "edges": [
+        {
+          "type": "static",
+          "toId": "kursk_mt3_train_center",
+          "transportType": "metro_3",
+          "transportName": "Метро (синяя ветка)",
+          "travelMinutes": 3
+        },
+        {
+          "type": "static",
+          "toId": "pl_rev_mt3",
+          "transportType": "metro_3",
+          "transportName": "Метро (синяя ветка)",
+          "travelMinutes": 0
+        }
+      ]
+    },
+    {
+      "id": "pl_rev_mt3_train_out",
+      "name": "Метро Площадь Революции",
+      "type": "metro_train",
+      "edges": [
+        {
+          "type": "static",
+          "toId": "arb_mt3_train_out",
+          "transportType": "metro_3",
+          "transportName": "Метро (синяя ветка)",
+          "travelMinutes": 2
+        },
+        {
+          "type": "static",
+          "toId": "pl_rev_mt3",
+          "transportType": "metro_3",
+          "transportName": "Метро (синяя ветка)",
+          "travelMinutes": 0
+        }
+      ]
+    },
+    {
+      "id": "slav_mt3_train_center",
+      "name": "Метро Славянский бульвар",
+      "type": "metro_train",
+      "edges": [
+        {
+          "type": "static",
+          "toId": "park_pob_mt3_train_center",
+          "transportType": "metro_3",
+          "transportName": "Метро (синяя ветка)",
+          "travelMinutes": 4
+        },
+        {
+          "type": "static",
+          "toId": "slav_mt3",
+          "transportType": "metro_3",
+          "transportName": "Метро (синяя ветка)",
+          "travelMinutes": 0
+        }
+      ]
+    },
+    {
+      "id": "slav_mt3_train_out",
+      "name": "Метро Славянский бульвар",
+      "type": "metro_train",
+      "edges": [
+        {
+          "type": "static",
+          "toId": "kun_mt3_train_out",
+          "transportType": "metro_3",
+          "transportName": "Метро (синяя ветка)",
+          "travelMinutes": 2
+        },
+        {
+          "type": "static",
+          "toId": "slav_mt3",
+          "transportType": "metro_3",
+          "transportName": "Метро (синяя ветка)",
+          "travelMinutes": 0
+        }
+      ]
+    },
+    {
+      "id": "smol_mt3_train_center",
+      "name": "Метро Смоленская",
+      "type": "metro_train",
+      "edges": [
+        {
+          "type": "static",
+          "toId": "arb_mt3_train_center",
+          "transportType": "metro_3",
+          "transportName": "Метро (синяя ветка)",
+          "travelMinutes": 3
+        },
+        {
+          "type": "static",
+          "toId": "smol_mt3",
+          "transportType": "metro_3",
+          "transportName": "Метро (синяя ветка)",
+          "travelMinutes": 0
+        }
+      ]
+    },
+    {
+      "id": "smol_mt3_train_out",
+      "name": "Метро Смоленская",
+      "type": "metro_train",
+      "edges": [
+        {
+          "type": "static",
+          "toId": "kiev_mt3_train_out",
+          "transportType": "metro_3",
+          "transportName": "Метро (синяя ветка)",
+          "travelMinutes": 2
+        },
+        {
+          "type": "static",
+          "toId": "smol_mt3",
+          "transportType": "metro_3",
+          "transportName": "Метро (синяя ветка)",
+          "travelMinutes": 0
+        }
+      ]
+    },
+    {
+      "id": "strog_mt3_train_center",
+      "name": "Метро Строгино",
+      "type": "metro_train",
+      "edges": [
+        {
+          "type": "static",
+          "toId": "krul_mt3_train_center",
+          "transportType": "metro_3",
+          "transportName": "Метро (синяя ветка)",
+          "travelMinutes": 9
+        },
+        {
+          "type": "static",
+          "toId": "strog_mt3",
+          "transportType": "metro_3",
+          "transportName": "Метро (синяя ветка)",
+          "travelMinutes": 0
+        }
+      ]
+    },
+    {
+      "id": "strog_mt3_train_out",
+      "name": "Метро Строгино",
+      "type": "metro_train",
+      "edges": [
+        {
+          "type": "static",
+          "toId": "strog_mt3",
+          "transportType": "metro_3",
+          "transportName": "Метро (синяя ветка)",
+          "travelMinutes": 0
         }
       ]
     }
